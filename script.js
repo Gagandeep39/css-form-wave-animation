@@ -3,6 +3,10 @@ labels.forEach((label) => {
   // Distibute in an array and add then in a span
   label.innerHTML = label.innerText
     .split('')
-    .map((letter, index) => `<span>${letter}</span>`)
+    .map(
+      // Addes a randpm trnsition delay
+      (letter, index) =>
+        `<span style="transition-delay:${index * 50}ms">${letter}</span>`
+    )
     .join('');
 });
