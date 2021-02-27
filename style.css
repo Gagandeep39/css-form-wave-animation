@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  background-color: slateblue;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -15,4 +17,63 @@ body {
   justify-content: center;
   /* Preents scrollbar from showing by default */
   overflow: hidden;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 20px 40px;
+}
+
+.container h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container a {
+  text-decoration: none;
+  color: rgb(133, 112, 190);
+}
+
+.form-control {
+  width: 300px;
+  position: relative;
+  margin: 20px 0 40px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px white solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  color: #fff;
+  outline: 0;
+}
+
+.fomr-control input:focus,
+.form-control input:valid {
+  outline: 0;
+}
+
+.btn {
+  cursor: pointer;
+  width: 100%;
+  display: inline-block;
+  background-color: rgb(133, 112, 190);
+  padding: 15px;
+  font-family: inherit;
+  border: 0;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.text {
+  margin-top: 30px;
 }
